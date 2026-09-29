@@ -1,8 +1,8 @@
 #import "preamble.typ": *
+#import "title-as-page.typ": title
 
 #show: preamble
-#include "title-as-page.typ"
-#pagebreak()
+#show: title
 
 #align(center)[= Введение]
 *Цель работы:*
@@ -11,7 +11,7 @@
 1. ...
 
 #pagebreak()
-// Нумерация задач с единицыа
+// Нумерация задач с единицы
 #counter(heading).update(0)
 // Задачи лабораторной работы - в tasks.typ
 #include "tasks.typ"

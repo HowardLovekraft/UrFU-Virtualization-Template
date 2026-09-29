@@ -17,6 +17,7 @@
   set par(
     justify: true,
     leading: 1em,
+    first-line-indent: (amount: 1.25em, all: true),
   )
   // Доп. отступ под заголовками
   // LaTeX-like и это есть в шаблоне
@@ -40,6 +41,13 @@
     _ #it.body _
     #v(1em)  // Требование шаблона №8
   ]
+
+  // Подсветка ссылок
+  show link: set text(blue)
+  show link: it => underline(it)
+
+  // Центрирование "Оглавления"
+  show outline: it => align(center)[#it]
 
   doc
 }

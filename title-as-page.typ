@@ -1,13 +1,13 @@
 // i18n date names
 #import "@preview/icu-datetime:0.2.2": fmt
 
-#let author = "YOUR SURNAME AND FIRSTNAME"
-#let group = "РИ-340917"
 #let course = [DevOps: Виртуализация и облачные технологии]
-#let topic = [YOUR TOPIC]
+#let report-type = [практической]  // или лабораторной
 #let report-number = 1
+#let topic = [YOUR TOPIC]
+#let author = [YOUR SURNAME AND FIRSTNAME]
 
-#{
+#let title(doc) = {
   set document(title: topic)
   let today = datetime.today()
 
@@ -39,7 +39,7 @@
   align(center)[
     Отчёт
 
-    По лабораторной работе №#report-number
+    По #report-type работе №#report-number
 
     *#topic*
   ]
@@ -58,10 +58,13 @@
   ]
   pagebreak()
 
-  // Нумерация со второй страницы!!!
+  // Нумерация со второй страницы
   set page(numbering: "1")
   outline(
     title: "Оглавление",
     indent: 0pt,
   )
+  pagebreak()
+
+  doc
 }

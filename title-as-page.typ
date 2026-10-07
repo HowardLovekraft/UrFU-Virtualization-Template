@@ -13,7 +13,7 @@
 
   grid(
     columns: (0.33fr, 0.67fr),
-    image("images/clipboard-image.png"),
+    image("images/UrFU-Logo.png"),
     align(center)[
       #v(1em)
       Министерство образования и науки \ Российской Федерации

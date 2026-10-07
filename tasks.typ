@@ -3,8 +3,17 @@
 #set heading(numbering: "1.")
 #set page(numbering: "1")
 
-= Задача 1
+= Задача ONE
 
-== Подзадача 1.1
+== Подзадача SUBONE
+// Оффтоп:
+// @picNNN - reference
+// <picNNN> - label
+// Ref без label не существует!
+Пример вставки картинки (@pic001):
+#figure(
+  image("images/UrFU-Logo.png"),
+  caption: [YOUR CAPTION],
+) <pic001>
 
-= Задача 2
+= Задача TWO

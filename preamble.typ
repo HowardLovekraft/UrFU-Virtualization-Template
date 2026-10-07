@@ -21,7 +21,7 @@
   )
   // Доп. отступ под заголовками
   // LaTeX-like и это есть в шаблоне
-  show heading: set block(height: 0.9em)
+  show heading: set block(below: 0.9em)
 
   //  Жирные заголовки H1 - LaTeX-like содержание
   show outline.entry.where(level: 1): it => strong(it)
